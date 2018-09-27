@@ -1,0 +1,18 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+};
+
+#getStarted {
+    margin-top: 50px;
+};
+
+#surveyWelcome {
+    margin: 0 auto;
+    margin-top: 50px;
+};
+
+#aboutYou {
+    margin: 15px;
+};
+

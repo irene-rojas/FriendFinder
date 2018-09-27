@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Irene's Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- JQUERY -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- MY CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+    <style>
+            body {
+            width: 800px;
+            margin: 0 auto;
+            };
+      
+          #getStarted {
+            margin-top: 50px;
+          };
+      
+          #surveyWelcome {
+            margin: 0 auto;
+            margin-top: 50px;
+          };
+      
+          #aboutYou {
+            margin: 15px;
+          };
+      </style>
+      
+</head>
+
+<body>
+
+    <div class="row" id="surveyWelcome">
+        <div class="col-md-12">
+            <h1>Survey Questions</h1>
+            <a class="btn btn-secondary" href="/">
+                <i class="fas fa-home"></i>
+                </a></button>
+            <hr class="my-4">
+        </div>
+    </div>
+
+    <!-- start survey questions -->
+    <div class="survey">
+        <div class="row">
+
+            <div class="col-md-12" id="aboutYou">
+                <h3>About You</h3>
+            </div>        
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" id="intro">
+
+                <form>
+                    <label for="inputName"><h5>Name (Required)</h5></label>
+                    <input type="text" class="form-control" id="nameInput">
+                </form>
+
+                <form>
+                    <label for="inputPhoto"><h5>Link to Photo (Required)</h5></label>
+                    <input type="text" class="form-control" id="photoInput">
+                </form>
+
+                <hr class="my-4">   
+
+            </div>
+        </div><!--end name and photo-->
+
+        <div class="row">
+            <div class="col-md-12" id="surveyQuestions">
+                <div class="row">
+                    <!-- question1 -->
+                    <div class="col-md-12">
+                        <h5>Question 1</h5>
+                        <h6>Are you a human?</h6>
+                        <div class="form-group">
+                            <select class="form-control" id="question1">
+                                <option>Select an option</option>
+                                <option value="1">1 (Strongly disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly agree)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- question2 -->
+                    <div class="col-md-12">
+                        <h5>Question 2</h5>
+                        <h6>Nutella is the food of the gods.</h6>
+                        <div class="form-group">
+                            <select class="form-control" id="question2">
+                                <option>Select an option</option>
+                                <option value="1">1 (Strongly disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly agree)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- question3 -->
+                    <div class="col-md-12">
+                        <h5>Question 3</h5>
+                        <h6>Cats rule, dogs drool</h6>
+                        <div class="form-group">
+                            <select class="form-control" id="question3">
+                                <option>Select an option</option>
+                                <option value="1">1 (Strongly disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly agree)</option>
+                                </select>
+                        </div>
+                    </div>
+                    <!-- question4 -->
+                    <div class="col-md-12">
+                        <h5>Question 4</h5>
+                        <h6>You prefer Metro over driving.</h6>
+                        <div class="form-group">
+                            <select class="form-control"id="question4">
+                                <option>Select an option</option>
+                                <option value="1">1 (Strongly disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly agree)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- question5 -->
+                    <div class="col-md-12">
+                        <h5>Question 5</h5>
+                        <h6>Tact is important in telling the truth.</h6>
+                        <div class="form-group">
+                            <select class="form-control" id="question5">
+                                <option>Select an option</option>
+                                <option value="1">1 (Strongly disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly agree)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- question6 -->
+                    <div class="col-md-12">
+                        <h5>Question 6</h5>
+                        <h6>Evolution is a fact.</h6>
+                        <div class="form-group">
+                            <select class="form-control" id="question6">
+                                <option>Select an option</option>
+                                <option value="1">1 (Strongly disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly agree)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- question7 -->
+                    <div class="col-md-12">
+                        <h5>Question 7</h5>
+                        <h6>You enjoy Thai food.</h6>
+                        <div class="form-group">
+                            <select class="form-control" id="question7">
+                                <option>Select an option</option>
+                                <option value="1">1 (Strongly disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly agree)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- question8 -->
+                    <div class="col-md-12">
+                        <h5>Question 8</h5>
+                        <h6>You prefer small gatherings over loud and wild parties.</h6>
+                        <div class="form-group">
+                            <select class="form-control" id="question8">
+                                <option>Select an option</option>
+                                <option value="1">1 (Strongly disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly agree)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- question9 -->
+                    <div class="col-md-12">
+                        <h5>Question 9</h5>
+                        <h6>You would love a day of just sitting on a beach.</h6>
+                        <div class="form-group">
+                            <select class="form-control" id="question9">
+                                <option>Select an option</option>
+                                <option value="1">1 (Strongly disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly agree)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- question10 -->
+                    <div class="col-md-12">
+                        <h5>Question 10</h5>
+                        <h6>You like to snuggle.</h6>
+                        <div class="form-group">
+                            <select class="form-control" id="question10">
+                                <option>Select an option</option>
+                                <option value="1">1 (Strongly disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly agree)</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div> <!-- end class survey-->
+
+    <!-- submit button -->
+    <div class="submitButton">
+        <div class="col-md-12">
+            <a class="btn btn-secondary btn-lg btn-block" id="submitButton" href="./app/data/friends.js">
+            <i class="fas fa-check-circle"></i>
+                Submit</a></button>
+        </div>
+    </div>
+
+    <!-- start footer -->
+    <div class="row">
+        <div class="col-md-12">
+            <a href="/api/friends" target="_blank">API Friends List</a>
+                |
+            <a href="https://github.com/irene-rojas/FriendFinder" target="_blank">GitHub Repo</a>
+        </div>
+    </div>
+    <!-- end footer -->
+
+    <script>
+        // on submit
+        $("#submitButton").on("click", function() {
+            event.preventDefault();
+            // get user name and photo
+            var userData = {
+                name: $("#nameInput").val().trim(),
+                photo: $("#photoInput").val().trim(),
+            // get user choices
+                scores: [
+                    $("#question1").val(),
+                    $("#question2").val(),
+                    $("#question3").val(),
+                    $("#question4").val(),
+                    $("#question5").val(),
+                    $("#question6").val(),
+                    $("#question7").val(),
+                    $("#question8").val(),
+                    $("#question9").val(),
+                    $("#question10").val()
+                ]
+            };
+            console.log(userData);
+            $.post("/api/friends", userData, function(dataFromAPI) {
+                console.log(dataFromAPI);
+            })
+            
+        });
+
+    </script>
+
+
+</body>
+
+</html>
