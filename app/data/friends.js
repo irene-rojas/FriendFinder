@@ -4,16 +4,16 @@ var friends =
         "name": "John",
         "photo": "http://www.gstatic.com/tv/thumb/persons/487578/487578_v9_ba.jpg",
         "scores": [
-            "5",
-            "2",
-            "4",
-            "2",
-            "1",
-            "4",
-            "3",
-            "2",
-            "4",
-            "5"
+            5,
+            2,
+            4,
+            2,
+            1,
+            4,
+            3,
+            2,
+            4,
+            5
         ]
     },
     {
